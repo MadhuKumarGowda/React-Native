@@ -53,7 +53,7 @@ Join our community of developers creating universal apps.
 
 Steps to configure tailwind css into react natives are as follows:
 
-### 1. Navigate to [https://www.nativewind.dev/]
+### 1. Navigate to [https://www.nativewind.dev/] for more infromation
 
     Need to install nativewind and it's peer dependencies by running below command
     **npx expo install nativewind tailwindcss react-native-reanimated react-native-safe-area-context**
@@ -69,7 +69,7 @@ Steps to configure tailwind css into react natives are as follows:
       @tailwind utilities;
      `
 
-### 4. Manually create babel.config.js file add below configuration
+### 4. Manually create babel.config.js to file add below configuration
 
     `module.exports = function (api) {api.cache(true); return {presets: [
       ["babel-preset-expo", { jsxImportSource: "nativewind" }],"nativewind/babel",
