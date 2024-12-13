@@ -48,3 +48,50 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## Steps to add TailwindCSS Config to React Native app
+
+Steps to configure tailwind css into react natives are as follows:
+
+### 1. Navigate to [https://www.nativewind.dev/] for more information
+
+    Need to install nativewind and it's peer dependencies by running below command
+    **npx expo install nativewind tailwindcss react-native-reanimated react-native-safe-area-context**
+
+### 2. Run below command to create tailwind.config.js file
+
+      **npx tailwindcss init**
+
+### 3. Create global.css file to add the tailwind directives
+
+    `@tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+     `
+
+### 4. Manually create babel.config.js file to add below configuration
+
+    `module.exports = function (api) {api.cache(true); return {presets: [
+      ["babel-preset-expo", { jsxImportSource: "nativewind" }],"nativewind/babel",
+    ], };};`
+
+### 5. Create metro.config.js to add below configuration which will consider when build the app
+
+`const { getDefaultConfig } = require("expo/metro-config");const { withNativeWind } = require('nativewind/metro');
+   const config = getDefaultConfig(__dirname) module.exports = withNativeWind(config, { input: './global.css' })`
+
+### 6. Import globall.css in app.js / app.tsx / index.js / index.tsx
+
+      `import "./global.css"`
+
+### 7. This is optional step but would be good to create **nativewind-env.d.ts** add below configuration to get rid of TS warning when we add className attribute
+
+      /// <reference types="nativewind/types" />
+
+### Now you are good use TailwindCss utilities in your React Native app
+
+example:
+
+`<View **className="flex flex-row justify-start items-start gap-3"**>
+  <Text **className="text-red-700 text-3xl"**> Welcome </Text> 
+  </View>`
