@@ -1,87 +1,73 @@
-import {
-  Image,
-  StyleSheet,
-  Platform,
-  Text,
-  View,
-  ImageBackground,
-} from "react-native";
+import { Image, StyleSheet, Text, ScrollView, View } from "react-native";
 
-import { HelloWave } from "@/components/HelloWave";
-import ParallaxScrollView from "@/components/ParallaxScrollView";
 const backgroundImage = require("../../assets/images/bg.jpg");
 
 import "../../global.css";
 
 export default function HomeScreen() {
   return (
-    <View className="flex flex-1">
-      <ImageBackground
-        source={backgroundImage}
-        className="flex-1 justify-center items-center"
-      >
-        <Text className="text-3xl font-bold text-white"> Image Text</Text>
-      </ImageBackground>
-      <ParallaxScrollView
-        headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
-        headerImage={
-          // <Image
-          //   source={require("@/assets/images/partial-react-logo.png")}
-          //   style={styles.reactLogo}
-          // />
-
-          // Read image from internet we mush use uri attribute
-          <Image
-            source={{ uri: "https://picsum.photos/300" }}
-            className="w-[450] h-[300] object-contain"
-          />
-        }
-      >
-        <View className="flex flex-row justify-start items-start gap-3">
-          {/* Applied Tailwind CSS here */}
-          <Text className="text-red-700 text-3xl"> Welcome </Text>
-          <HelloWave />
-        </View>
-        <View className="gap-8 mb-4">
-          <Text className="text-blue-700 text-2xl"> Step 1: Try it </Text>
-          <View>
-            <Text>
-              {" "}
-              Edit <Text className="font-semibold">app/(tabs)/index.tsx</Text>
-              to see changes. Press{" "}
-              <Text className="font-semibold">
-                {Platform.select({
-                  ios: "cmd + d",
-                  android: "cmd + m",
-                  web: "F12",
-                })}
-              </Text>
-            </Text>
-          </View>
-        </View>
-
-        <View className="gap-8 mb-4">
-          <Text className="text-blue-700 text-2xl">Step 2: Explore</Text>
-          <Text>
-            Tap the Explore tab to learn more about what's included in this
-            starter app.
-          </Text>
-        </View>
-        <View className="gap-8 mb-8">
-          <Text className="text-blue-700 text-2xl">
-            Step 3: Get a fresh start
-          </Text>
-          <Text>
-            When you're ready, run <Text></Text>
-            <Text className="font-semibold">npm run reset-project</Text>to get a
-            fresh
-            <Text className="font-semibold">app</Text> directory. This will move
-            the current
-            <Text className="font-semibold"> app</Text>
-            <Text className="font-semibold"> app-example</Text>
-          </Text>
-        </View>
-      </ParallaxScrollView>
+    <View className="flex-1 bg-purple-400 padding">
+      <ScrollView className="flex:1">
+        <Image source={backgroundImage} className="w-screen h-1/2"></Image>
+        <Text className="text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ipsam
+          numquam earum voluptas dolorum deserunt est qui quasi velit quo. Eaque
+          possimus aliquid nisi quis maiores incidunt quod? Vero ut voluptas
+          voluptates dolorum voluptatibus nihil minima odit eaque esse sint
+          laborum natus ipsa reiciendis labore, minus iure autem. Maxime
+          consectetur maiores, ut dignissimos, nostrum aperiam at, iure aliquam
+          impedit provident sint nemo ipsum. Omnis enim, doloremque qui eligendi
+          repellendus dolores, officia id obcaecati ex sapiente voluptatem
+          soluta ipsum vel a corporis explicabo nostrum deleniti velit neque
+          ipsam? Repellendus expedita minus, iure tenetur nobis enim ex dolores
+          voluptate ipsum fugit perferendis cumque atque est quas id, illum ut
+          voluptatum provident hic eveniet esse ab sint nemo! Laborum, in.
+          Provident iusto perferendis tempore. Sapiente repudiandae praesentium
+          eaque. Obcaecati nulla quae officia, nobis atque esse optio
+          perspiciatis officiis, rem natus molestiae voluptate quas harum
+          temporibus cupiditate similique! Ab dolor, beatae ipsa voluptate aut
+          labore repellat dolores possimus soluta omnis vel amet exercitationem
+          similique, ad sequi reprehenderit cupiditate accusamus laborum odio
+          iste minus nihil? Repudiandae cupiditate numquam voluptatem tempora
+          quibusdam! Voluptatem aut dolorem soluta iusto! Quae maxime natus
+          mollitia, eligendi incidunt nesciunt ratione accusantium voluptatibus
+          exercitationem temporibus officia velit enim minima necessitatibus
+          illo iure, magni consectetur placeat veritatis id delectus ea? Ea
+          nulla animi quasi corrupti harum incidunt maiores libero repudiandae
+          laboriosam inventore id quisquam, earum veritatis, placeat cum maxime
+          quidem fugiat dicta accusantium doloremque, provident sit sequi. Qui
+          iste, deleniti excepturi ullam illum eligendi mollitia nihil. Alias
+          laborum, quos ducimus tempore eius nobis asperiores illum natus
+          possimus ipsa similique optio delectus maxime error aut, numquam
+          facere veniam dolorum! Dolores dicta, fugit amet ullam esse dolor
+          vitae sit aut odit error, repudiandae blanditiis. Perferendis a fugiat
+          excepturi aperiam dolorum voluptatem recusandae rem, quos odio minima
+          quam natus vel eos dicta possimus molestiae voluptatibus mollitia
+          omnis assumenda odit voluptatum? At aliquid ratione quos sit itaque ad
+          quidem nulla repudiandae ut odio, nostrum omnis dolor asperiores
+          laboriosam, sint quam, ipsum ipsam cupiditate harum voluptatem minima
+          quo cum? Rem quisquam, omnis perspiciatis libero, quaerat, odit
+          impedit officiis sunt eum vero suscipit necessitatibus minima. Neque
+          obcaecati earum perferendis corporis. Quae deleniti enim et pariatur
+          autem? Voluptatum rerum distinctio nihil ullam necessitatibus
+          architecto incidunt, iure temporibus ipsa, cupiditate eum ad, corrupti
+          quasi? Officiis vitae labore assumenda voluptas, itaque possimus
+          recusandae! At ratione eaque illo facilis accusantium culpa molestiae,
+          quas amet pariatur aperiam ad temporibus voluptate odit reprehenderit
+          labore porro. Similique explicabo, inventore voluptatibus omnis libero
+          officia corrupti quasi dolorem saepe laborum. Vitae nam, ipsum labore
+          exercitationem ea, ab aut modi sunt quos omnis voluptatibus obcaecati
+          deleniti asperiores dignissimos, placeat id? In, rerum illum? Sequi
+          ad, odit harum debitis assumenda dignissimos id, explicabo quibusdam
+          similique, reprehenderit libero ratione dolorum rerum nemo delectus
+          totam quos officia quo pariatur error? Vero ducimus qui et mollitia
+          iste accusantium, amet quidem quae sit veniam non sint repellendus
+          error maxime corrupti, numquam soluta? Asperiores, fugiat minus vitae
+          maxime, eius, quod id ipsa porro magni veniam officia modi quo
+          similique provident assumenda veritatis. Laboriosam, maiores
+          asperiores.
+        </Text>
+      </ScrollView>
     </View>
   );
 }
