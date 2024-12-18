@@ -33,7 +33,7 @@ export default function HomeScreen() {
         color="blue"
       ></ButtonComp>
       <ScrollView className="">
-        {/* Pressable Compnent is same as button but it handle its chiled click event  */}
+        {/* Pressable Component is same as button but it handle its child click event  */}
         {/* Pressable also support other events like onPress, 
           onLongPress : is triggered when a press is held for longer 500 milliseconds
           onPressOut: is called when the press gesture is deactivated
