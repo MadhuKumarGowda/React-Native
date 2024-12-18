@@ -7,7 +7,7 @@ import ButtonComp from "./ButtonComp";
     Since they are purposefully interruptive make sure you use them only when necessary  
     onRequestClose will trigger when use click back button
     animationType by default none, we can choose slide || fade
-    presentationStyle is appereance of modal in iOS only not for android, we can choose formSheet || pageSheet
+    presentationStyle is appearance  of modal in iOS only not for android, we can choose formSheet || pageSheet
      
 */
 }
