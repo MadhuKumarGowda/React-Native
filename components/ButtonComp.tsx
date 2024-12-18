@@ -12,7 +12,7 @@ const ButtonComp = ({ title, onClick, color }: Props) => {
       <Button
         title={title}
         onPress={onClick}
-        color={color ? color : "yellow"}
+        color={color ? color : "orange"}
       ></Button>
     </View>
   );
